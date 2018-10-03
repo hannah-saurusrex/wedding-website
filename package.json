@@ -1,0 +1,25 @@
+{
+  "name": "wedding-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "browser-sync start -startPath 'index.html' -w 'index.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannah-saurusrex/wedding-website.git"
+  },
+  "author": "hannah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannah-saurusrex/wedding-website/issues"
+  },
+  "homepage": "https://github.com/hannah-saurusrex/wedding-website#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.7"
+  }
+}

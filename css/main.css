@@ -97,6 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .pages-nav-container {
+        align: center;
+        font-size: 24px;
+
+   }
+
+   hero-image {
+       align: center;
+   }
+
+   .homepage-header-text {
+       align: center;
+       font-size: 30px;
+       vertical-align: middle;
+   }
 
 
 

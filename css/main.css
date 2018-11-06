@@ -97,21 +97,86 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   .pages-nav-container {
-        align: center;
-        font-size: 24px;
+    body {
+        font-family: 'KoHo', sans-serif;
+    }
 
+    .location, .date {
+        font-size: 18px;
+    }
+
+    .h4 {
+        font-size: 12px;
+    }
+
+   .pages-nav-container {
+        text-align: center;
+        font-size: 24px;
    }
 
-   hero-image {
+   .hero-image {
        align: center;
    }
 
    .homepage-header-text {
-       align: center;
+       text-align: center;
        font-size: 30px;
        vertical-align: middle;
    }
+
+   .names-section {
+       text-align: center;
+   }
+
+   .wedding-info-section{
+       text-align: center;
+   }
+
+  .schedule-headline {
+      text-align: center;
+      font-size: 36px;
+  }
+
+  .description {
+      text-align: center;
+      font-size: 24px;
+  }
+
+  .event-name, .registry-headline {
+      text-align: center;
+      font-size: 22px;
+  }
+
+  .event-date {
+      text-align: center;
+      font-size: 18px;
+  }
+
+  .event-time {
+      text-align: center;
+      font-size: 18px;
+  }
+
+  .event-icon {
+      text-align: center;  
+      display: block;
+      margin: 0 auto;
+      padding: 0 0 10px 0;
+  }
+
+  .address {
+      text-align: center;
+      vertical-align: middle;
+      font-size: 20px;
+      padding: 5px 0 0 0;
+  }
+
+  .event-note {
+      text-align: center;
+      font-size: 16px;
+  }
+
+ 
 
 
 

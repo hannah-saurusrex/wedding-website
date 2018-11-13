@@ -109,13 +109,45 @@ textarea {
         font-size: 12px;
     }
 
+    .wedding-date, .wedding-location {
+        text-align: left;
+        display: inline-block;
+        padding: 0 5px 0 10px;
+    }
+
+    .hashtag-nav {
+        text-align: right;
+        float: right;
+        padding-right: 15px;
+    }
+
    .pages-nav-container {
         text-align: center;
         font-size: 24px;
    }
 
+   .nav {
+        text-align: center;
+    }
+  
+    .nav ul li {
+        display: inline-block;
+    }
+  
+    .nav ul li a {
+        color: #828282;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 25px;
+    }
+
+    .nav-title {
+        text-align: center;
+    }
+
    .hero-image {
-       align: center;
+        text-align: center;
    }
 
    .homepage-header-text {
@@ -142,9 +174,9 @@ textarea {
       font-size: 24px;
   }
 
-  .event-name, .registry-headline {
+  .event-name {
       text-align: center;
-      font-size: 22px;
+      font-size: 24px;
   }
 
   .event-date {
@@ -174,9 +206,13 @@ textarea {
   .event-note {
       text-align: center;
       font-size: 16px;
+      line-height: 26px;
   }
 
- 
+ .footer-note {
+     text-align: center;
+     font-size: 14px;
+ }
 
 
 

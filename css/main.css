@@ -121,13 +121,18 @@ textarea {
         padding-right: 15px;
     }
 
-   .pages-nav-container {
+   .main {
         text-align: center;
         font-size: 24px;
    }
 
    .nav {
         text-align: center;
+    }
+
+    .fixed-nav nav {
+        position: fixed;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
     }
   
     .nav ul li {
@@ -216,7 +221,9 @@ textarea {
 
 
 
-
+@media (min-width: 500px) {
+    /* header classes go here */
+}
 
 
 

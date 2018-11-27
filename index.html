@@ -25,9 +25,9 @@
           <h5 class="hashtag-nav">#hashtaggoeshere</h5>
         </div>
         <div class="nav-title">
-          <h1>Colin &amp; Hannah</h1>
+          <h1>Hannah &amp; Colin</h1>
         </div>
-        <div class "pages-nav-container">
+        <nav id="#main">
           <div class="nav">
             <ul class="list-inline">
               <li><a href="#">Home</a></li>
@@ -38,7 +38,7 @@
               <li><a href="#">Things to do</a></li>
             </ul>
           </div>
-        </div>
+        </nav>
       </header>
     </div>
   </div>
@@ -60,13 +60,13 @@
   <div class="names-section">
     <div class="content">
       <h1 class="name1">
-        <span class="first-name">Colin</span>
-        <span class="last-name">Reinhart</span>
+        <span class="first-name">Hannah</span>
+        <span class="last-name">McMahon</span>
       </h1>
       <span class="amp">&amp;</span>
       <h1 calss="name2">
-        <span class="first-name">Hannah</span>
-        <span class="last-name">McMahon</span>
+        <span class="first-name">Colin</span>
+        <span class="last-name">Reinhart</span>
       </h1>
     </div>
   </div>
@@ -156,7 +156,7 @@
         <address>Coors Field
           <br>2001 Blake St.,
           <br>Denver, CO 80205</address>
-        <p class="event-note">We love cheering on the Rockies at Coors Field. Included in your RSVP is an option to let us know<br>if you would like to attend the Rockies Game with us. Tickest will be no more than $15 per person.</p>
+        <p class="event-note">We love cheering on the Rockies at Coors Field. Included in your RSVP is an option to let us know<br>if you would like to attend the Rockies Game with us. Tickets will be no more than $15 per person.</p>
       </div>
       </div>
     </div>
@@ -255,5 +255,24 @@
 <div class="footer">
   <p class="footer-note">This website was designed and built with <span style="font-weight: bold;">love</span> by the bride, Hannah Rose McMahon</p>
 </div>
+
+<script>
+
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offsetTop;
+  
+  function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+  
+  window.addEventListener('scroll', fixNav);
+  
+  </script>
 
 </html>

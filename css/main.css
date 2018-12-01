@@ -128,17 +128,22 @@ textarea {
 
    .nav {
         text-align: center;
+        top: 0;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        border-bottom: 1px solid #c0c2ce;
     }
 
     .fixed-nav nav {
         position: fixed;
-        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
     }
   
     .nav ul li {
         display: inline-block;
     }
-  
+
     .nav ul li a {
         color: #828282;
         font-size: 18px;
@@ -182,6 +187,7 @@ textarea {
   .event-name {
       text-align: center;
       font-size: 24px;
+      text-transform: uppercase;
   }
 
   .event-date {
@@ -204,7 +210,7 @@ textarea {
   .address {
       text-align: center;
       vertical-align: middle;
-      font-size: 20px;
+      font-size: 22px;
       padding: 5px 0 0 0;
   }
 
@@ -214,7 +220,25 @@ textarea {
       line-height: 26px;
   }
 
- .footer-note {
+  .registry-note {
+      text-align: center;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+  .initials {
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+      padding: 10px 0 0 0;
+  }
+
+  .footer {
+      border-top: 1px solid #c0c2ce;
+      width: 100%;
+  }
+
+  .footer-note {
      text-align: center;
      font-size: 14px;
  }
@@ -223,6 +247,57 @@ textarea {
 
 @media (min-width: 500px) {
     /* header classes go here */
+
+    .hero-wrapper, .content-names {
+        padding: 20px 0 20px 0;
+    }
+
+    .content, .hashtag {
+        justify-content: center;
+        display: flex;
+        background-color: #91c4dd;
+        padding: 0 0 20px 0;
+    }
+    .content .location {
+        border-right: 2px solid #c0c2ce;
+        padding: 0 5% 0 5%;
+        vertical-align: middle;
+    }
+
+    .content .date {
+        padding: 0 5% 0 5%;
+        vertical-align: middle;
+    }
+
+    .events-container {
+        justify-content: center;
+        display: flex;
+    }
+
+    .event-headline {
+        border-right: 2px solid #c0c2ce;
+        padding: 0 10% 20px 10%;
+        vertical-align: middle; 
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .event-schedule-description {
+        padding: 0 10% 20px 10%;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .address {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 10px 0 0 0;
+    }
+
+    .event-note {
+        max-width: 300px;
+        text-align: center;
+    }
 }
 
 

@@ -101,6 +101,10 @@ textarea {
         font-family: 'KoHo', sans-serif;
     }
 
+    :root {
+        --border-style: 1px solid black;
+    }
+
     .location, .date {
         font-size: 18px;
     }
@@ -132,7 +136,7 @@ textarea {
         width: 100%;
         position: relative;
         z-index: 1;
-        border-bottom: 1px solid black;
+        border-bottom: var(--border-style);
     }
 
     .fixed-nav nav {
@@ -234,7 +238,7 @@ textarea {
   }
 
   .footer {
-      border-top: 1px solid black;
+      border-top: var(--border-style);
       width: 100%;
   }
 

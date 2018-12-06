@@ -15,10 +15,11 @@
 
 <body>
 
+  
   <!--Header & Nav Section-->
   <div>
-    <div class="sticky-nav" style="transform: translateZ(0px);">
-      <header id="public-page-header" class="clearfix">
+    <div class="sticky-nav">
+      <header id="">
         <div class="top-row hidden-xs hidden-sm">
           <h5 class="wedding-date"> August 15, 2019</h5>
           <h5 class="wedding-location">Denver, CO</h5>
@@ -28,17 +29,15 @@
           <h1>Hannah &amp; Colin</h1>
         </div>
         <nav id="main">
-          <div class="nav">
-            <ul class="list-inline">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Schedule</a></li>
-              <li><a href="#">Travel</a></li>
-              <li><a href="#">Registry</a></li>
-              <li><a href="#">RSVP</a></li>
-              <li><a href="#">Things to do</a></li>
-            </ul>
-          </div>
-        </nav>
+          <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">RSVP</a></li>
+            <li><a href="#">Things to do</a></li>
+          </ul>
+      </nav>
       </header>
     </div>
   </div>
@@ -278,10 +277,10 @@
   function fixNav() {
     if(window.scrollY >= topOfNav) {
       document.body.style.paddingTop = nav.offsetHeight + 'px';
-      document.body.classList.add('fixed-nav');
+      nav.classList.add('fixed-nav');
     } else {
       document.body.style.paddingTop = 0;
-      document.body.classList.remove('fixed-nav');
+      nav.classList.remove('fixed-nav');
     }
   }
   

@@ -250,7 +250,7 @@ textarea {
 
   .footer-note {
      text-align: center;
-     font-size: 14px;
+     font-size: 16px;
  }
 
 
@@ -307,6 +307,13 @@ textarea {
 
     .event-note {
         text-align: center;
+    }
+
+    .hero-image {
+        max-width: auto;
+        text-align: center;
+        background-size: cover;
+        position: relative;
     }
 }
 

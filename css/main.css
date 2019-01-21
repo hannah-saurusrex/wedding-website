@@ -98,13 +98,13 @@ textarea {
    ========================================================================== */
 
     body {
-        font-family: 'KoHo', sans-serif;
+        font-family: 'Nunito Sans', 'Open Sans', sans-serif;
         position: relative;
         height: 100%;
     }
 
     :root {
-        --border-style: 1px solid black;
+        --border-style: 1px solid #0098A9;
     }
 
     .location, .date {
@@ -119,12 +119,14 @@ textarea {
         text-align: left;
         display: inline-block;
         padding: 0 5px 0 10px;
+        color: #828282;
     }
 
     .hashtag-nav {
         text-align: right;
         float: right;
         padding-right: 15px;
+        color: #828282;
     }
 
    .main {
@@ -164,6 +166,7 @@ textarea {
 
     .nav-title {
         text-align: center;
+        color: #0098A9;
     }
 
    .hero-image {
@@ -174,10 +177,12 @@ textarea {
        text-align: center;
        font-size: 30px;
        vertical-align: middle;
+       color: #0098A9;
    }
 
    .names-section {
        text-align: center;
+       color: #0098A9;
    }
 
    .wedding-info-section{
@@ -187,27 +192,32 @@ textarea {
   .schedule-headline {
       text-align: center;
       font-size: 36px;
+      color: #0098A9;
   }
 
   .description {
       text-align: center;
       font-size: 24px;
+      color: #828282;
   }
 
   .event-name {
       text-align: center;
       font-size: 24px;
       text-transform: uppercase;
+      color: #0098A9;
   }
 
   .event-date {
       text-align: center;
       font-size: 18px;
+      color: #828282;
   }
 
   .event-time {
       text-align: center;
       font-size: 18px;
+      color: #828282;
   }
 
   .event-icon {
@@ -215,6 +225,7 @@ textarea {
       display: block;
       margin: 0 auto;
       padding: 0 0 10px 0;
+      color: #828282;
   }
 
   .address {
@@ -222,18 +233,22 @@ textarea {
       vertical-align: middle;
       font-size: 22px;
       padding: 5px 0 0 0;
+      color: #828282;
   }
 
   .event-note {
       text-align: center;
       font-size: 16px;
       line-height: 26px;
+      color: #828282;
   }
 
   .registry-note {
       text-align: center;
       font-size: 18px;
       line-height: 26px;
+      width: auto;
+      color: #828282;
     }
 
   .initials {
@@ -241,11 +256,13 @@ textarea {
       font-size: 18px;
       line-height: 28px;
       padding: 10px 0 0 0;
+      color: #0098A9;
   }
 
   .footer {
       border-top: var(--border-style);
       width: 100%;
+      color: #828282;
   }
 
   .footer-note {
@@ -265,11 +282,11 @@ textarea {
     .content, .hashtag {
         justify-content: center;
         display: flex;
-        background-color: #91c4dd;
         padding: 0 0 20px 0;
+        color: #828282;
     }
     .content .location {
-        border-right: 2px solid black;
+        border-right: 2px solid #0098A9;
         padding: 0 5% 0 5%;
         vertical-align: middle;
     }
@@ -285,7 +302,7 @@ textarea {
     }
 
     .event-headline {
-        border-right: 2px solid black;
+        border-right: 2px solid #0098A9;
         padding: 0 8% 20px 8%;
         vertical-align: middle; 
         text-align: center;

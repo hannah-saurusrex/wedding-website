@@ -171,6 +171,8 @@ textarea {
 
    .hero-image {
         text-align: center;
+        width: auto;
+        max-width: 100% !important;
    }
 
    .homepage-header-text {
@@ -330,9 +332,11 @@ textarea {
     }
 
     .hero-image {
-        max-width: auto;
+        width: auto;
+        max-width: 100% !important;
         text-align: center;
-        background-size: cover;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
         position: relative;
     }
 }

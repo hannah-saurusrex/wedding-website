@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Hannah and Colin</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans" rel="stylesheet">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="hannah and colin" />
+</head>
+
+<body>
+
+  
+  <!--Header & Nav Section-->
+  <div>
+    <div class="sticky-nav" id="home">
+      <header id="">
+        <div class="top-row hidden-xs hidden-sm">
+          <h5 class="wedding-date"> August 15, 2019</h5>
+          <h5 class="wedding-location">Denver, CO</h5>
+          <h5 class="hashtag-nav">#hashtaggoeshere</h5>
+        </div>
+        <div class="nav-title">
+          <h1>Hannah &amp; Colin</h1>
+        </div>
+        <nav id="main">
+          <ul class="list-inline">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#registry">Registry</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <!-- <li><a href="#thingstodo">Things to do</a></li> -->
+          </ul>
+      </nav>
+      </header>
+    </div>
+  </div>
+  
+  <div class="site-wrap">
+
+    <!--Hero Image Section-->
+    <div class="homepage">
+      <div class="hero-wrapper">
+        <div class="homepage-header-text">
+          <h1>We're getting married!</h1>
+        </div>
+      </div>
+    </div>
+
+  <!--Names Section-->
+  <div class="names-section">
+    <div class="content-names">
+      <h1 class="name1">
+        <span class="first-name">Hannah</span>
+        <span class="last-name">McMahon</span>
+      </h1>
+      <span class="amp">&amp;</span>
+      <h1 calss="name2">
+        <span class="first-name">Colin</span>
+        <span class="last-name">Reinhart</span>
+      </h1>
+    </div>
+  </div>
+
+  <!--RSVP Section-->
+  <div class="rsvp" id="rsvp">
+    <form name="rsvp" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name(s): <input type="text" name="name" /></label>   
+      </p>
+      <p>Will you be attending our wedding ceremony &amp; reception?
+        <label><br>accepts with pleasure <input type="radio" name="attendance" value="accept" /></label>
+        <label><br>regretfully declines <input type="radio" name="attendance" value="decline" /></label>      
+      </p>
+      <p>Will you be attending the Rockies Game with us on Friday, August 16th?
+        <label><br>yes, can't wait! <input type="radio" name="attendance" value="accept" /></label>
+        <label><br>sadly, no <input type="radio" name="attendance" value="decline" /></label>      
+      </p>
+      <p>Please indicate the number of baseball tickets you need below:
+        <label><br>1 <input type="radio" name="attendance" value="accept" /></label>
+        <label><br>2 <input type="radio" name="attendance" value="decline" /></label>
+        <label><br>3 <input type="radio" name="attendance" value="decline" /></label>
+        <label><br>4 <input type="radio" name="attendance" value="decline" /></label> 
+        <label><br>5+ <input type="radio" name="attendance" value="decline" /></label>     
+      </p>
+      <p>If you selected &quot;5+&quot;, please let us know how many tickets you need:
+        <label><br>Tickets: <input type="text" name="tickets"/></label>  
+      </p>
+      <p>
+        <label style="padding-top: 20px;">Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </div>
+
+  <!--initials/logo section-->
+  <div class="initials">
+    <h1>H | C</h1>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <p class="footer-note">This website was designed and built with <span style="font-weight: bold; color: #0098A9;">love</span> by the bride, Hannah Rose McMahon</p>
+  </div>
+
+</div>
+
+</body>
+
+
+
+
+
+
+<!--Sticky Nav Functionality-->
+<script>
+
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offsetTop;
+  
+  function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      nav.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      nav.classList.remove('fixed-nav');
+    }
+  }
+  
+  window.addEventListener('scroll', fixNav);
+  
+  </script>
+
+</html>

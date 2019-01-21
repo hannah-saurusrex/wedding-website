@@ -204,6 +204,7 @@ textarea {
   .event-name {
       text-align: center;
       font-size: 24px;
+      line-height: 28px;
       text-transform: uppercase;
       color: #0098A9;
   }
@@ -211,12 +212,14 @@ textarea {
   .event-date {
       text-align: center;
       font-size: 18px;
+      line-height: 15px; 
       color: #828282;
   }
 
   .event-time {
       text-align: center;
       font-size: 18px;
+      line-height: 15px; 
       color: #828282;
   }
 

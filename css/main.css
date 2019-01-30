@@ -98,7 +98,8 @@ textarea {
    ========================================================================== */
 
     body {
-        font-family: 'Nunito', 'Open Sans', sans-serif;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
         position: relative;
         height: 100%;
     }
@@ -109,10 +110,16 @@ textarea {
 
     .location, .date {
         font-size: 18px;
+        font-weight: 200;
     }
 
     .h4 {
         font-size: 12px;
+        font-weight: 200;
+    }
+
+    h1 {
+        font-weight: 200;
     }
 
     .wedding-date {
@@ -120,6 +127,7 @@ textarea {
         display: inline-block;
         padding: 0 0 0 25px;
         color: #828282;
+        font-weight: 300;
     }
 
     .wedding-location {
@@ -127,12 +135,14 @@ textarea {
         display: inline-block;
         padding: 0 0 0 5px;
         color: #828282;
+        font-weight: 300;
     }
 
     .hashtag-nav {
         text-align: right;
         float: right;
         padding-right: 25px;
+        font-weight: 300;
         color: #828282;
     }
 
@@ -178,6 +188,7 @@ textarea {
         font-size: 24px;
         line-height: 28px;
         padding-bottom: 5px;
+        font-weight: 200;
     }
 
    .hero-image {
@@ -198,6 +209,7 @@ textarea {
        line-height: 42px;
        vertical-align: middle;
        color: #0098A9;
+       font-weight: 200;
    }
 
    .names-section {
@@ -232,6 +244,7 @@ textarea {
       line-height: 28px;
       text-transform: uppercase;
       color: #0098A9;
+      font-weight: 300;
   }
 
   .event-date {
@@ -239,12 +252,14 @@ textarea {
       font-size: 20px;
       line-height: 24px; 
       color: #828282;
+      font-weight: 300;
   }
 
   .event-time {
       text-align: center;
       font-size: 18px;
       color: #828282;
+      font-weight: 300;
   }
 
   .event-icon {
@@ -330,6 +345,7 @@ textarea {
     .content .date {
         padding: 0 5% 0 5%;
         vertical-align: middle;
+        font-weight: 200;
     }
 
     .events-container {

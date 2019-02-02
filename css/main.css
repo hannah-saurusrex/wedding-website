@@ -111,11 +111,20 @@ textarea {
     .location, .date {
         font-size: 18px;
         font-weight: 200;
+        color: #ffffff;
     }
 
-    .h4 {
-        font-size: 12px;
+    .hero-wrapper {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    h4, h3 {
+        font-size: 20px;
         font-weight: 200;
+        width: 100%;
+        color: #ffffff;
     }
 
     h1 {
@@ -186,7 +195,7 @@ textarea {
         text-align: center;
         color: #0098A9;
         font-size: 24px;
-        line-height: 28px;
+        line-height: 32px;
         padding-bottom: 5px;
         font-weight: 200;
     }
@@ -205,11 +214,16 @@ textarea {
 
    .homepage-header-text {
        text-align: center;
-       font-size: 38px;
-       line-height: 42px;
-       vertical-align: middle;
-       color: #0098A9;
+       font-size: 64px;
+       line-height: 72px;
+       text-transform: uppercase;
+       color: #ffffff;
        font-weight: 200;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 100%;
    }
 
    .names-section {
@@ -217,17 +231,25 @@ textarea {
        font-size: 26px;
        line-height: 30px;
        color: #0098A9;
+       font-weight: 200;
+       text-transform: uppercase;
    }
 
    .wedding-info-section{
        text-align: center;
+       font-weight: 200;
+       font-style: #ffffff;
+       background-color: #0098A9;
+       padding-bottom: 20px;
    }
 
-  .schedule-headline {
+  .schedule-headline, .proposal-headline {
       text-align: center;
       font-size: 38px;
       line-height: 42px;
       color: #0098A9;
+      padding-top: 20px;
+      text-transform: uppercase;
   }
 
   .description {
@@ -282,7 +304,7 @@ textarea {
 
   .event-note {
       text-align: center;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 24px;
       color: #828282;
   }
@@ -335,11 +357,13 @@ textarea {
         display: flex;
         padding: 0 0 20px 0;
         color: #828282;
+        font-weight: 200;
     }
     .content .location {
-        border-right: 2px solid #0098A9;
+        border-right: 2px solid #ffffff;
         padding: 0 5% 0 5%;
         vertical-align: middle;
+        width: auto;
     }
 
     .content .date {

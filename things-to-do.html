@@ -119,7 +119,7 @@
       <div class="event-headline">
         <h2 class="event-name"><a href="https://thesourcehotel.com/" style="text-decoration: none; color: #0098A9;">The Source</a></h2>
         <address>3500 Brighton Blvd,<br>Denver, CO 80216</address>
-        <p class="event-note">Denver's first food hall, this bustling artisan food market located in a landmark 1880s building, features 13 vendors &amp; a hotel. The Source is also home to one of our favorite breweries &mdash;&nbsp;<a href="http://www.crookedstave.com/" style="text-decoration: underline; color: #0098A9;">Croked Stave</a>.</p>
+        <p class="event-note">Denver's first food hall, this bustling artisan food market located in a landmark 1880s building, features 13 vendors &amp; a hotel. The Source is also home to one of our favorite breweries &mdash;&nbsp;<a href="http://www.crookedstave.com/" style="text-decoration: underline; color: #0098A9;">Crooked Stave</a>.</p>
       </div>
     </div>
     <div class="events-container">
@@ -156,23 +156,7 @@
 
 
 <!--Sticky Nav Functionality-->
-<script>
 
-  const nav = document.querySelector('#main');
-  const topOfNav = nav.offsetTop;
-  
-  function fixNav() {
-    if(window.scrollY >= topOfNav) {
-      document.body.style.paddingTop = nav.offsetHeight + 'px';
-      nav.classList.add('fixed-nav');
-    } else {
-      document.body.style.paddingTop = 0;
-      nav.classList.remove('fixed-nav');
-    }
-  }
-  
-  window.addEventListener('scroll', fixNav);
-  
-  </script>
+<script src="js/main.js"></script>
 
 </html>

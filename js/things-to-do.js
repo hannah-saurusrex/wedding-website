@@ -1,4 +1,4 @@
-const data = [
+const places = [
     {
         tags: ["RiNo Restaurant, Drinks"],
         title: "Cart-Driver Pizza",

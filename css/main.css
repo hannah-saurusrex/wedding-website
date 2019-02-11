@@ -252,6 +252,11 @@ textarea {
        padding-bottom: 20px;
    }
 
+   /* .proposal-header {
+    width: 70%;
+    text-align: center;
+   } */
+
   .schedule-headline, .proposal-headline {
       text-align: center;
       font-size: 38px;
@@ -260,6 +265,15 @@ textarea {
       padding-top: 20px;
       text-transform: uppercase;
   }
+
+    .proposal-description {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 200;
+        color: #828282;
+        text-align: center; 
+        padding: 0 40px 0 40px;
+    }
 
   .description {
       text-align: center;
@@ -281,7 +295,7 @@ textarea {
   .event-date, .event-time {
       text-align: center;
       font-size: 20px;
-      line-height: 24px; 
+      line-height: 28px; 
       color: #828282;
       font-weight: 200;
   }

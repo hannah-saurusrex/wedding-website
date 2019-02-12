@@ -450,6 +450,10 @@ textarea {
         display: none;
         visibility: hidden;
     }
+    h1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
     .homepage-header-text {
         text-align: center;
         font-size: 32px;
@@ -458,19 +462,26 @@ textarea {
     .names-section {
         text-align: center;
         font-size: 20px;
-        line-height: 40px;
+        line-height: 28px;
         padding: 0px;
     }
     .horizontal {
         padding: 10px 0 10px 0;
         font-size: 24px;
-        line-height: 28px;
+        line-height: 26px;
+    }
+    .proposal-headline, .schedule-headline {
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
     }
     .event-date, .registry-note, .event-note {
         width: auto;
         max-width: 450px;
+        font-size: 20px;
+        line-height: 28px;
     }
-    .description {
+    .description, .proposal-description {
         text-align: center;
         font-size: 22px;
         line-height: 28px;

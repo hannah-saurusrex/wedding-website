@@ -189,7 +189,12 @@ textarea {
         font-size: 18px;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 25px;
+        padding: 20px 25px 18px 25px;
+    }
+
+    nav a:hover {
+        background-color: #0098A9;
+        color: white;
     }
 
     .nav-title {

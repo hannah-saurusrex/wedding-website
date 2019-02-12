@@ -173,6 +173,7 @@ textarea {
         position: relative;
         border-bottom: var(--border-style);
         background: white;
+        overflow: hidden;
     }
 
     .fixed-nav {
@@ -185,16 +186,27 @@ textarea {
     }
 
     nav ul li a {
+        text-align: center;
+        display: block;
         color: #828282;
         font-size: 18px;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 20px 25px 18px 25px;
+        padding: 10px 25px 10px 25px;
     }
 
     nav a:hover {
         background-color: #0098A9;
         color: white;
+    }
+
+    .active {
+        background-color: #0098A9;
+        color: white;
+    }
+
+    .icon {
+        display:none;
     }
 
     .nav-title {
@@ -267,8 +279,8 @@ textarea {
   }
 
     .proposal-description {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 26px;
         font-weight: 200;
         color: #828282;
         text-align: center; 
@@ -446,7 +458,7 @@ textarea {
         font-size: 20px;
         line-height: 40px;
     }
-    .list-inline, .hashtag-nav, .wedding-date, .wedding-location {
+    .hashtag-nav, .wedding-date, .wedding-location {
         display: none;
         visibility: hidden;
     }
@@ -487,6 +499,8 @@ textarea {
         line-height: 28px;
     }
 }
+
+
 
 
 

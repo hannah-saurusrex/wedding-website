@@ -35,14 +35,14 @@ const places = [
         description: "Stowaway is a cozy café offering a full espresso bar, plus globally influenced breakfast & lunch fare. A great place to grab a bite in RiNo."
     },
     {
-        tags: ["Capitol Hill, Museum"],
+        tags: ["Golden Triangle, Museum"],
         title: "Clyfford Still Museum",
         address: "1250 Bannock St. Denver, CO 80204",
         link: "https://clyffordstillmuseum.org/",
         description: "The Clyfford Still Museum is a minimalist showcase for the large-scale paintings & archives of the namesake Abstract Expressionist."
     },
     {
-        tags: ["Capitol Hill, Museum"],
+        tags: ["Golden Triangle, Museum"],
         title: "Denver Art Museum",
         address: "100 W 14th Ave Pkwy, Denver, CO 80204",
         link: "https://denverartmuseum.org/",
@@ -119,10 +119,24 @@ const places = [
         description: "Spur Coffee offers some of the best cups of joe in town. Their pastries and food items are all made from scratch daily with fresh and wholesome ingredients."
     },
     {
-        tags: ["Capitol Hill, Retail"],
+        tags: ["Golden Triangle, Retail"],
         title: "Meek Vintage",
         address: "39 W 11th Ave. Denver, CO 80204",
         link: "http://shopmeek.co/",
         description: "Meek is one of our favorite places to shop in town. Meek offers modern and vintage home goods, clothing, and of course plants."
+    },
+    {
+        tags: ["Golden Triangle, Museum"],
+        title: "Kirkland Museum of Fine & Decorative Art",
+        address: "1201 Bannock St. Denver, CO 80204",
+        link: "http://www.kirklandmuseum.org/",
+        description: "3,500+ art nouveau, art deco, Pop Art & postmodern works & Western landscapes by Vance Kirkland."
+    },
+    {
+        tags: ["Golden Triangle, Restaurant, Drinks"],
+        title: "Leven Deli Co.",
+        address: "123 W 12th Ave. Denver, CO 80204",
+        link: "https://eatleven.com/",
+        description: "With sentimental attachment to the classic American Deli, Leven is a modern take on the traditional deli model. From food, to drinks and design, Leven is built to be a new type of deli better fit for today."
     },
   ]

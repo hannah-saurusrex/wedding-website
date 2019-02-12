@@ -14,12 +14,12 @@
   
   window.addEventListener('scroll', fixNav);
 
-  /* Toggle between adding and removing the "responsive" class to list-inline when the user clicks on the icon */
+  /* Toggle between adding and removing the 'responsive' class to topnav when the user clicks on the icon */
 function myFunction() {
-  var x = document.getElementById("mylist-inline");
-  if (x.className === "list-inline") {
-    x.className += " responsive";
+  var x = document.getElementById('#main');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
   } else {
-    x.className = "list-inline";
+    x.className = 'topnav';
   }
 }

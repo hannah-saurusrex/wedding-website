@@ -140,3 +140,19 @@ const places = [
         description: "With sentimental attachment to the classic American Deli, Leven is a modern take on the traditional deli model. From food, to drinks and design, Leven is built to be a new type of deli better fit for today."
     },
   ]
+
+//   const location = places.filter(function(place) {
+//     if(places.tags == RiNo) {
+//         return true;
+//     }
+//   });
+//   console.table(location);
+
+const location = places.sort(function(a, b) {
+    if(a.tags > b.tags) {
+        return 1;
+    } else {
+        return -1;
+    }
+});
+console.table(location);

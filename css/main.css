@@ -269,7 +269,7 @@ textarea {
        padding-bottom: 20px;
    }
 
-  .schedule-headline, .proposal-headline {
+  .schedule-headline, .proposal-headline, .met-headline {
       text-align: center;
       font-size: 38px;
       line-height: 42px;
@@ -278,14 +278,14 @@ textarea {
       text-transform: uppercase;
   }
 
-  .proposal-header {
+  .proposal-header, .how-we-met {
       width: auto;
       max-width: 65%;
       text-align: center;
       margin: 0 auto;
   }
 
-    .proposal-description {
+    .proposal-description, .met-description {
         font-size: 18px;
         line-height: 26px;
         font-weight: 200;
@@ -350,6 +350,9 @@ textarea {
       line-height: 26px;
       width: auto;
       color: #828282;
+      width: auto;
+      max-width: 65%;
+      margin: 0 auto;
     }
 
   .initials {
@@ -525,11 +528,17 @@ textarea {
         font-size: 20px;
         line-height: 28px;
     }
-    .description, .proposal-description {
+    .description, .proposal-description, .met-description {
         text-align: center;
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
     }
+    .proposal-description, .met-description, .registry-note {
+        text-align: left;
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+    } 
 }
 
 

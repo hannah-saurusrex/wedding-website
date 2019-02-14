@@ -133,7 +133,7 @@ const places = [
         description: "3,500+ art nouveau, art deco, Pop Art & postmodern works & Western landscapes by Vance Kirkland."
     },
     {
-        tags: ["Golden Triangle, Restaurant, Drinks"],
+        tags: ["Golden Triangle", "Restaurant", "Drinks"],
         title: "Leven Deli Co.",
         address: "123 W 12th Ave. Denver, CO 80204",
         link: "https://eatleven.com/",
@@ -141,18 +141,22 @@ const places = [
     },
   ]
 
-//   const location = places.filter(function(place) {
-//     if(places.tags == RiNo) {
-//         return true;
-//     }
-//   });
-//   console.table(location);
-
-const location = places.sort(function(a, b) {
-    if(a.tags > b.tags) {
-        return 1;
-    } else {
-        return -1;
+  const filterPlaces = places.filter(function(place) {
+    if(place.tags.includes("Restaurant")) {
+        return true;
     }
-});
-console.table(location);
+  });
+  console.log(filterPlaces);
+
+//   addEventListener on any button I create; buttons have labels, assign based on label
+// const location = places.sort(function(a, b) {
+//     if(a.tags > b.tags) {
+//         return 1;
+//     } else {
+//         return -1;
+//     }
+// });
+// console.table(location);
+
+// getIt2.split()
+// getIt2.split(", ")

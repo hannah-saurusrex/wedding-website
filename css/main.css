@@ -278,13 +278,19 @@ textarea {
       text-transform: uppercase;
   }
 
+  .proposal-header {
+      width: auto;
+      max-width: 65%;
+      text-align: center;
+      margin: 0 auto;
+  }
+
     .proposal-description {
         font-size: 18px;
         line-height: 26px;
         font-weight: 200;
         color: #828282;
         text-align: center; 
-        padding: 0 40px 0 40px;
     }
 
   .description {

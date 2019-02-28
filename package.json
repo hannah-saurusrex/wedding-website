@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/hannah-saurusrex/wedding-website#readme",
   "dependencies": {
-    "browser-sync": "^2.24.7"
+    "browser-sync": "^2.24.7",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-watch": "^5.0.1"
   }
 }

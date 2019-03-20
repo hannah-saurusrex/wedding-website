@@ -381,6 +381,15 @@ textarea {
 @media screen and (min-width: 500px) {
     /* header classes go here */
 
+    /* .menu li.close {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: none;
+        float: right;
+    }
+     */
     .rsvp-hero-wrapper, .rsvp-content-names {
         text-align: center;
         text-transform: uppercase;
@@ -457,6 +466,37 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+    /* .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: #fff;
+        width: 300px;
+        height: 100%;
+        z-index: 3;
+        transform: translateX(300px);
+        transition: all 200ms ease-in-out;
+    }
+
+    .menu.open {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        display: block;
+        padding: 0 14px;
+    } */
+
+    /* .menu li.close {
+        text-align: right;
+        display: block;
+    }
+
+    .moible-btn {
+        display: inline-block;
+    } */
+    
     .nav-title {
         text-align: center;
         font-size: 20px;

@@ -230,7 +230,7 @@ textarea {
 
    img {
        width: 100%;
-       object-fit: fill;
+       object-fit: cover;
        max-height: 600px;
    }
 
@@ -459,6 +459,7 @@ textarea {
     .hero-image, .second-image {
         width: auto;
         max-width: 100% !important;
+        height: auto;
         text-align: center;
         background-size: contain, cover;
         background-repeat: no-repeat;

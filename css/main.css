@@ -217,7 +217,7 @@ textarea {
    .hero-image {
         text-align: center;
         width: 100%;
-        object-fit: fill
+        object-fit: cover;
    }
 
    .second-image {
@@ -225,6 +225,7 @@ textarea {
        width: 100%;
        object-fit: fill; 
        padding-top: 30px;
+       background-position: center;
    }
 
    img {
@@ -455,7 +456,7 @@ textarea {
         text-align: center;
     }
 
-    .hero-image {
+    .hero-image, .second-image {
         width: auto;
         max-width: 100% !important;
         text-align: center;

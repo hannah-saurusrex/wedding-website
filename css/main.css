@@ -108,7 +108,7 @@ textarea {
         --border-style: 1px solid #0098A9;
     }
 
-    .wedding-location, .wedding-date {
+    .location, .date {
         font-size: 18px;
         font-weight: 200;
         color: #ffffff;
@@ -138,6 +138,7 @@ textarea {
         padding: 0 0 0 25px;
         color: #828282;
         font-weight: 300;
+        font-size: 14px;
     }
 
     .wedding-location {
@@ -146,6 +147,7 @@ textarea {
         padding: 0 0 0 5px;
         color: #828282;
         font-weight: 300;
+        font-size: 14px;
     }
 
     .hashtag-nav {
@@ -154,6 +156,7 @@ textarea {
         padding-right: 25px;
         font-weight: 300;
         color: #828282;
+        font-size: 14px;
     }
 
    .main {
@@ -175,24 +178,6 @@ textarea {
         background: white;
         overflow: hidden;
     }
-
-    .burger div {
-        width: 25px;
-        height: 3px;
-        background-color: #0098A9;
-        margin: 5px;
-    }
-
-    /* .menu {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-    } */
 
     .fixed-nav {
         position: fixed;

@@ -1,11 +1,24 @@
-var mobileBtn = document.querySelector('.mobile-btn');
-var menu = document.querySelector('.menu');
-var closeBtn = document.querySelector('.close');
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.menu');
+  const navLinks = document.querySelectorAll('.menu li');
 
-mobileBtn.addEventListener('click', function() {
-  menu.className += 'open';
-})
+  //toggle nav
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
 
-closeBtn.addEventListener('click', function() {
-  menu.className = 'menu';
-})
+    //animate links
+    navLinks.forEach((link, index) => {
+      if(link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.75}s`
+      }
+    });
+    //burger animation
+    burger.classList.toggle('toggle');
+    
+  });
+}
+
+navSlide();

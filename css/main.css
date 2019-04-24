@@ -494,17 +494,16 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
-    
-    .nav-title {
-        text-align: center;
-        font-size: 20px;
-        line-height: 40px;
-=======
     html, body {
         overflow-x: hidden;
     }
 
+    .nav-title {
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
     .topnav {
         border-style: none;
     }
@@ -541,7 +540,6 @@ textarea {
         align-items: center;
         width: 100%;
         transform: translateX(100%);;
->>>>>>> mobile-nav
     }
 
     .mobile-menu li {

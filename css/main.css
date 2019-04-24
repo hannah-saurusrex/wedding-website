@@ -102,6 +102,7 @@ textarea {
         font-weight: 200;
         position: relative;
         height: 100%;
+        box-sizing: border-box;
     }
 
     :root {
@@ -170,7 +171,6 @@ textarea {
 
    nav {
         text-align: center;
-        vertical-align: middle;
         top: 0;
         width: 100%;
         position: relative;
@@ -193,6 +193,7 @@ textarea {
         display: block;
         color: #828282;
         font-size: 18px;
+        letter-spacing: 3px;
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 25px 10px 25px;
@@ -201,6 +202,14 @@ textarea {
     nav a:hover {
         background-color: #0098A9;
         color: white;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #0098A9;
+        margin: 5px;
+        transition: 0.3s ease;
     }
 
     .active {
@@ -213,8 +222,13 @@ textarea {
         color: #0098A9;
         font-size: 24px;
         line-height: 32px;
+        letter-spacing: 3px;
         padding-bottom: 5px;
         font-weight: 200;
+    }
+
+    .logo {
+        display: none;
     }
 
    .hero-image {
@@ -241,6 +255,7 @@ textarea {
        text-align: center;
        font-size: 64px;
        line-height: 72px;
+       letter-spacing: 2px;
        text-transform: uppercase;
        color: #ffffff;
        font-weight: 200;
@@ -255,6 +270,7 @@ textarea {
        text-align: center;
        font-size: 26px;
        line-height: 32px;
+       letter-spacing: 3px;
        color: #0098A9;
        font-weight: 200;
        text-transform: uppercase;
@@ -383,12 +399,24 @@ textarea {
 
 
 @media screen and (min-width: 500px) {
-    /* header classes go here */
 
+<<<<<<< HEAD
     .burger {
+=======
+    .mobile-noshow {
+>>>>>>> mobile-nav
         display: none;
+        visibility: hidden;
     }
 
+<<<<<<< HEAD
+=======
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+
+>>>>>>> mobile-nav
     .rsvp-hero-wrapper, .rsvp-content-names {
         text-align: center;
         text-transform: uppercase;
@@ -466,16 +494,70 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+<<<<<<< HEAD
     
     .nav-title {
         text-align: center;
         font-size: 20px;
         line-height: 40px;
+=======
+    html, body {
+        overflow-x: hidden;
     }
-    .hashtag-nav, .wedding-date, .wedding-location {
+
+    .topnav {
+        border-style: none;
+    }
+    
+    .menu, .nav-title, .hashtag-nav, .wedding-date, .wedding-location, .sticky-nav {
         display: none;
         visibility: hidden;
     }
+
+    .mobile-noshow {
+        display: flex;
+        border-bottom: none;
+        position: relative;
+        overflow: inherit;
+    }
+
+    .logo {
+        display: block;
+        color: #0098A9;
+        margin-left: 12px;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 0px;
+        top: 55px;
+        z-index: 1;
+        height: 30vh;
+        background-color: #0098A9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);;
+>>>>>>> mobile-nav
+    }
+
+    .mobile-menu li {
+        opacity: 0;
+    }
+
+    .mobile-menu a {
+        color: white;
+    }
+
+    .burger {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
     h1 {
         font-size: 20px;
         line-height: 28px;
@@ -520,6 +602,33 @@ textarea {
     } 
 }
 
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
 
 
 

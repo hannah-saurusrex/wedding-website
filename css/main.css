@@ -400,23 +400,16 @@ textarea {
 
 @media screen and (min-width: 500px) {
 
-<<<<<<< HEAD
-    .burger {
-=======
     .mobile-noshow {
->>>>>>> mobile-nav
         display: none;
         visibility: hidden;
     }
 
-<<<<<<< HEAD
-=======
     .burger {
         display: none;
         cursor: pointer;
     }
 
->>>>>>> mobile-nav
     .rsvp-hero-wrapper, .rsvp-content-names {
         text-align: center;
         text-transform: uppercase;

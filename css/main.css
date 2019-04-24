@@ -201,11 +201,6 @@ textarea {
         color: white;
     }
 
-    .burger {
-        display: none;
-        cursor: pointer;
-    }
-
     .burger div {
         width: 25px;
         height: 3px;
@@ -227,6 +222,10 @@ textarea {
         letter-spacing: 3px;
         padding-bottom: 5px;
         font-weight: 200;
+    }
+
+    .logo {
+        display: none;
     }
 
    .hero-image {
@@ -253,6 +252,7 @@ textarea {
        text-align: center;
        font-size: 64px;
        line-height: 72px;
+       letter-spacing: 2px;
        text-transform: uppercase;
        color: #ffffff;
        font-weight: 200;
@@ -267,6 +267,7 @@ textarea {
        text-align: center;
        font-size: 26px;
        line-height: 32px;
+       letter-spacing: 3px;
        color: #0098A9;
        font-weight: 200;
        text-transform: uppercase;
@@ -396,6 +397,16 @@ textarea {
 
 @media screen and (min-width: 500px) {
 
+    .mobile-noshow {
+        display: none;
+        visibility: hidden;
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+
     .rsvp-hero-wrapper, .rsvp-content-names {
         text-align: center;
         text-transform: uppercase;
@@ -473,45 +484,60 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-    body {
+    html, body {
         overflow-x: hidden;
     }
 
-    .nav-title {
-        position: relative;
-        float: left;
-        margin: 5px;
-        left: 3px;
+    .topnav {
+        border-style: none;
     }
-    .hashtag-nav, .wedding-date, .wedding-location {
+    
+    .menu, .nav-title, .hashtag-nav, .wedding-date, .wedding-location, .sticky-nav {
         display: none;
         visibility: hidden;
     }
 
-    .menu {
+    .mobile-noshow {
+        display: flex;
+        border-bottom: none;
         position: relative;
+        overflow: inherit;
+    }
+
+    .logo {
+        display: block;
+        color: #0098A9;
+        margin-left: 12px;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
         right: 0px;
-        height: 40vh;
+        top: 55px;
+        z-index: 1;
+        height: 30vh;
         background-color: #0098A9;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: auto;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        width: 100%;
+        transform: translateX(100%);;
     }
 
-    .menu li {
+    .mobile-menu li {
         opacity: 0;
     }
 
-    .menu a {
+    .mobile-menu a {
         color: white;
     }
 
     .burger {
-        display: block;
-        float: right;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 
     h1 {

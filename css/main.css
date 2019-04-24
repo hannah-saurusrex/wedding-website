@@ -528,7 +528,7 @@ textarea {
         right: 0px;
         top: 55px;
         z-index: 1;
-        height: 30vh;
+        height: auto;
         background-color: #0098A9;
         display: flex;
         flex-direction: column;

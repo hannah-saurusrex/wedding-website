@@ -109,6 +109,11 @@ textarea {
         --border-style: 1px solid #0098A9;
     }
 
+    a {
+        text-decoration: none;
+        color: #0098A9;
+    }
+
     .location, .date {
         font-size: 18px;
         font-weight: 200;
@@ -426,6 +431,28 @@ textarea {
         line-height: 50px;
     }
 
+    .sort-section {
+        text-align: center;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+
+    button {
+        background-color: #0098A9;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 16px;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        font-weight: 200;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+
     .content, .hashtag {
         justify-content: center;
         display: flex;
@@ -449,6 +476,11 @@ textarea {
     .events-container {
         justify-content: center;
         display: flex;
+    }
+
+    .to-do-layout {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .event-headline {
@@ -489,6 +521,11 @@ textarea {
 
 @media screen and (max-width: 480px) {
     
+    .sort-section, button {
+        display: none;
+        visibility: hidden;
+    }
+
     .nav-title {
         text-align: center;
         font-size: 20px;

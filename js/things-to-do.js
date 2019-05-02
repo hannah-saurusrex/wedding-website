@@ -138,27 +138,62 @@ const places = [
         address: "123 W 12th Ave. Denver, CO 80204",
         link: "https://eatleven.com/",
         description: "With sentimental attachment to the classic American Deli, Leven is a modern take on the traditional deli model. From food, to drinks and design, Leven is built to be a new type of deli better fit for today."
-    },
+    }
   ]
 
-  const filterPlaces = places.filter(function(place) {
-    if(place.tags.includes("Restaurant")) {
-        return true;
-    }
-  });
-  console.log(filterPlaces);
+let tag = "";
 
-// getElemenyById - use to grab the name of each button i.e. restaurant, golden triangle, museum, etc.  
-// addEventListener on any button I create; when clicked, display results
-// const location = places.sort(function(a, b) {
-//     if(a.tags > b.tags) {
-//         return 1;
-//     } else {
-//         return -1;
-//     }
-// });
-// console.table(location);
+//button event listener
+const container = document.querySelector(".to-do-layout");
+const buttons = document.querySelectorAll("button");
+const buttonsArray = Array.from(buttons);
 
 
-// getIt2.split()
-// getIt2.split(", ")
+
+const filterPlaces = () => {
+    places.filter((destination) => {
+        const node = destination.tags.map(lowercase => lowercase.toLowerCase())
+        if(tag !== "") {
+           if(node.includes(tag)){
+            return true;
+           }
+        } else {
+            return true;
+        }
+    }).map( (place) => {
+        const newDiv = document.createElement("div");
+        newDiv.className = "event-headline";
+        newDiv.dataset.tags = place.tags;
+        newDiv.innerHTML = `
+        <h2 class="event-name">
+            <a href="${place.link}"target="_blank">${place.title}</a>
+        </h2>
+        <address>${place.address}</address>
+        <p class="event-note">${place.description}</p>`
+        container.appendChild(newDiv);
+    })
+};
+filterPlaces();
+
+    // const h2 = document.createElement("h2");
+    // h2.className = "event-name";
+    // // h2.innerHTML = "<a href='" + place.link + "'>" + place.title + "</a>";
+    // h2.innerHTML = `<a href='${place.link}'>${place.title}</a>`;
+    // newDiv.appendChild(h2);
+    // const address = document.createElement("address");
+    // address.innerHTML = place.address;
+    // newDiv.appendChild(address);
+    // const note = document.createElement("description");
+    // note.innerHTML = place.description;
+    // note.className = "event-note";
+    // newDiv.appendChild(note);
+
+
+buttonsArray.map(everyButton => {
+    everyButton.addEventListener("click", (e) => {
+        const buttonId = e.target.id;
+        tag = buttonId; 
+        container.innerHTML = "";
+        filterPlaces();
+    });
+});

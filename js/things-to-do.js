@@ -141,6 +141,7 @@ const places = [
     } 
   ]
 
+
 let tag = "";
 
 //button event listener
@@ -148,33 +149,32 @@ const container = document.querySelector(".to-do-layout");
 const buttons = document.querySelectorAll("button");
 const buttonsArray = Array.from(buttons);
 
-
-
-const filterPlaces = () => {
-    places.filter((destination) => {
-        const node = destination.tags.map(lowercase => lowercase.toLowerCase())
-        if(tag !== "") {
-           if(node.includes(tag)){
-            return true;
+const filterPlaces = () => { //create a new function to filter the recommended locations
+    places.filter((destination) => { //filtering over the existing "places" array written above
+        const node = destination.tags.map(lowercase => lowercase.toLowerCase()) // change the text of each tag to be lower case; this ensures there are no discrepencies in text
+        if(tag !== "") { // if the tag is empty
+           if(node.includes(tag)){ // then if the node includes a tag
+            return true; // reveal the items with a certain tag
            }
         } else {
             return true;
         }
     }).map( (place) => {
-        const newDiv = document.createElement("div");
-        newDiv.className = "event-headline";
-        newDiv.dataset.tags = place.tags;
+        const newDiv = document.createElement("div"); // create a new div and insert the following:
+        newDiv.className = "event-headline"; // insert new class name (re-used an existing style module)
+        newDiv.dataset.tags = place.tags; // insert the tags
         newDiv.innerHTML = `
         <h2 class="event-name">
             <a href="${place.link}"target="_blank">${place.title}</a>
         </h2>
         <address>${place.address}</address>
-        <p class="event-note">${place.description}</p>`
-        container.appendChild(newDiv);
+        <p class="event-note">${place.description}</p>` // inserts the headline, link & address
+        container.appendChild(newDiv); // this appends the div, meaning all the above content has now been inserted into the div we created
     })
 };
-filterPlaces();
+filterPlaces(); // run the function
 
+// this is the same code as above, just written out long-hand, describing each exact thing. Above, we used the "$" and "{"
     // const h2 = document.createElement("h2");
     // h2.className = "event-name";
     // // h2.innerHTML = "<a href='" + place.link + "'>" + place.title + "</a>";
@@ -188,12 +188,12 @@ filterPlaces();
     // note.className = "event-note";
     // newDiv.appendChild(note);
 
-
+//map over every available button
 buttonsArray.map(everyButton => {
-    everyButton.addEventListener("click", (e) => {
-        const buttonId = e.target.id;
-        tag = buttonId; 
-        container.innerHTML = "";
-        filterPlaces();
+    everyButton.addEventListener("click", (e) => { // event listener is listening for clicks
+        const buttonId = e.target.id; // target the ID assigned to each button
+        tag = buttonId; // corelates the tags with the button IDs
+        container.innerHTML = ""; // insert the tagged items into the div we created above
+        filterPlaces(); // run the function
     });
 });

@@ -84,7 +84,7 @@ const places = [
         description: "Denver's first food hall, this bustling artisan food market located in a landmark 1880s building, features 13 vendors & a hotel. The Source is also home to one of our favorite breweries — Crooked Stave."
     },
     {
-        tags: ["RiNo", "Restaurant", "Drinks"],
+        tags: ["RiNo", "Drinks"],
         title: "Our Mutual Friend Brewing Company",
         address: "2810 Larimer St. Denver, CO 80205",
         link: "http://www.omfbeer.com/",
@@ -138,7 +138,7 @@ const places = [
         address: "123 W 12th Ave. Denver, CO 80204",
         link: "https://eatleven.com/",
         description: "With sentimental attachment to the classic American Deli, Leven is a modern take on the traditional deli model. From food, to drinks and design, Leven is built to be a new type of deli better fit for today."
-    }
+    } 
   ]
 
 let tag = "";

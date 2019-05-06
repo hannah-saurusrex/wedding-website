@@ -528,6 +528,27 @@ textarea {
         visibility: hidden;
     }
 
+    .rsvp-button {
+        display: inline-block;
+    }
+
+    #rsvp-button {
+        background-color: #0098A9;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 16px;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        font-weight: 200;
+        padding: 15px 20px;
+        cursor: pointer;
+        visibility: visible;
+    }
+
     .nav-title {
         text-align: center;
         font-size: 20px;

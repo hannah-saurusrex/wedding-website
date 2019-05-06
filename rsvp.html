@@ -35,11 +35,30 @@
               <li><a href="travel.html">Travel</a></li>
               <li><a href="registry.html">Registry</a></li>
               <li><a href="things-to-do.html">Things to do</a></li>
-              <!-- <li><a href="#rsvp" class="active">RSVP</a></li> -->
+              <li><a href="rsvp.html" class="active">RSVP</a></li>
             </ul>
         </nav>
       </header>
     </div>
+    <!--mobile nav-->
+    <nav class="mobile-noshow">
+      <div class="logo">
+        <h1>Hannah &amp; Colin</h1>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="registry.html">Registry</a></li>
+        <li><a href="things-to-do.html">Things to do</a></li>
+        <li><a href="rsvp.html">RSVP</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
   </div>
   
   <div class="site-wrap">
@@ -52,7 +71,7 @@
 
   <!--RSVP Section-->
   <div class="rsvp" id="rsvp">
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="rsvp" method="POST" data-netlify="true">
       <p>
         <label>Your Name(s): <input type="text" name="name" /></label>   
       </p>
@@ -65,11 +84,11 @@
         <label><br>sadly, no <input type="radio" name="rockies" value="decline" /></label>      
       </p>
       <p>Please indicate the number of baseball tickets your party needs below:
-        <label><br>1 <input type="radio" name="ticket-value" value="1" /></label>
-        <label><br>2 <input type="radio" name="ticket-value" value="2" /></label>
-        <label><br>3 <input type="radio" name="ticket-value" value="3" /></label>
-        <label><br>4 <input type="radio" name="ticket-value" value="4" /></label> 
-        <label><br>5+ <input type="radio" name="ticket-value" value="5" /></label>     
+        <label><br>1 <input type="radio" name="ticket-value" value="one" /></label>
+        <label><br>2 <input type="radio" name="ticket-value" value="two" /></label>
+        <label><br>3 <input type="radio" name="ticket-value" value="three" /></label>
+        <label><br>4 <input type="radio" name="ticket-value" value="four" /></label> 
+        <label><br>5+ <input type="radio" name="ticket-value" value="five" /></label>     
       </p>
       <p>If you selected &quot;5+&quot;, please let us know how many tickets you need:
         <label><br>tickets: <input type="text" name="tickets"/></label>  
@@ -80,9 +99,11 @@
       <p>
         <label style="padding-top: 20px;">Your Email: <input type="email" name="email" /></label>
       </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+      <div class="rsvp-button">
+        <p>
+          <button id="rsvp-button" type="submit" value="submit">Send</button>
+        </p>
+      </div>
     </form>
   </div>
 

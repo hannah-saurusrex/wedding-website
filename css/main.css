@@ -294,6 +294,7 @@ textarea {
       text-align: center;
       font-size: 38px;
       line-height: 42px;
+      letter-spacing: 1px;
       color: #0098A9;
       padding-top: 20px;
       text-transform: uppercase;
@@ -397,6 +398,7 @@ textarea {
 
   .rsvp {
       text-align: center;
+      padding-top: 20px;
       font-size: 18px;
       line-height: 28px;
       color: #828282;
@@ -610,6 +612,7 @@ textarea {
     }
     .proposal-headline, .schedule-headline {
         text-align: center;
+        letter-spacing: 1px;
         font-size: 28px;
         line-height: 36px;
     }

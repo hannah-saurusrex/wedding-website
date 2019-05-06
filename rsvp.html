@@ -23,14 +23,14 @@
         <div class="top-row hidden-xs hidden-sm">
           <h5 class="wedding-date"> August 15, 2019</h5>
           <h5 class="wedding-location">Denver, CO</h5>
-          <h5 class="hashtag-nav">#hashtaggoeshere</h5>
+          <h5 class="hashtag-nav">#ClearEyesFullReinharts</h5>
         </div>
         <div class="nav-title">
           <h1>Hannah &amp; Colin</h1>
         </div>
         <nav class="topnav" id="main">
             <ul class="list-inline">
-              <li><a href="#home">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="travel.html">Travel</a></li>
               <li><a href="registry.html">Registry</a></li>
@@ -44,33 +44,15 @@
   
   <div class="site-wrap">
 
-    <!--Hero Image Section-->
-    <div class="rsvp-homepage">
-      <div class="rsvp-hero-wrapper">
-        <div class="rsvp-homepage-header-text">
-          <h1>We're getting married!</h1>
-        </div>
-      </div>
-    </div>
-
-  <!--Names Section-->
-  <div class="names-section">
-    <div class="content-names">
-      <h1 class="name1">
-        <span class="first-name">Hannah</span>
-        <span class="last-name">McMahon</span>
-      </h1>
-      <span class="amp">&amp;</span>
-      <h1 calss="name2">
-        <span class="first-name">Colin</span>
-        <span class="last-name">Reinhart</span>
-      </h1>
-    </div>
+    <!--Registry Section-->
+  <div class="registry-header" id="registry">
+    <h1 class="schedule-headline">RSVP</h1>
+      <p class="registry-note">We are so excited to share our special day with you. Please let us know if you can make it, and what events you plan to attend below. </p>
   </div>
 
   <!--RSVP Section-->
   <div class="rsvp" id="rsvp">
-    <form name="rsvp" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
       <p>
         <label>Your Name(s): <input type="text" name="name" /></label>   
       </p>
@@ -78,19 +60,22 @@
         <label><br>accepts with pleasure <input type="radio" name="attendance" value="accept" /></label>
         <label><br>regretfully declines <input type="radio" name="attendance" value="decline" /></label>      
       </p>
-      <p>Will you be attending the Rockies Game with us on Friday, August 16th?
-        <label><br>yes, can't wait! <input type="radio" name="attendance" value="accept" /></label>
-        <label><br>sadly, no <input type="radio" name="attendance" value="decline" /></label>      
+      <p>Will you be attending the Rockies game with us on Friday, August 16th?
+        <label><br>yes, can't wait! <input type="radio" name="rockies" value="accept" /></label>
+        <label><br>sadly, no <input type="radio" name="rockies" value="decline" /></label>      
       </p>
-      <p>Please indicate the number of baseball tickets you need below:
-        <label><br>1 <input type="radio" name="attendance" value="accept" /></label>
-        <label><br>2 <input type="radio" name="attendance" value="decline" /></label>
-        <label><br>3 <input type="radio" name="attendance" value="decline" /></label>
-        <label><br>4 <input type="radio" name="attendance" value="decline" /></label> 
-        <label><br>5+ <input type="radio" name="attendance" value="decline" /></label>     
+      <p>Please indicate the number of baseball tickets your party needs below:
+        <label><br>1 <input type="radio" name="ticket-value" value="1" /></label>
+        <label><br>2 <input type="radio" name="ticket-value" value="2" /></label>
+        <label><br>3 <input type="radio" name="ticket-value" value="3" /></label>
+        <label><br>4 <input type="radio" name="ticket-value" value="4" /></label> 
+        <label><br>5+ <input type="radio" name="ticket-value" value="5" /></label>     
       </p>
       <p>If you selected &quot;5+&quot;, please let us know how many tickets you need:
-        <label><br>Tickets: <input type="text" name="tickets"/></label>  
+        <label><br>tickets: <input type="text" name="tickets"/></label>  
+      </p>
+      <p>We hope to see you out on the dance floor. Let us know if you have any song requests: 
+        <label><br>songs: <input type="text" name="songs"/></label>  
       </p>
       <p>
         <label style="padding-top: 20px;">Your Email: <input type="email" name="email" /></label>
